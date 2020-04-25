@@ -1,0 +1,7 @@
+%{
+  "circuits_uart": {:hex, :circuits_uart, "1.4.1", "f8151bfb5ac29fe2e791eec00bc6ec298fdb8fa81ddd80bdb0f9f2828f20d7b8", [:mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "8cc3065de6d9b859f76d10fa438e243103eea1ba53b9749e4c63005c6d89780b"},
+  "eapa": {:git, "https://github.com/Vonmo/eapa.git", "363e342456d7f8112b16bf2c8fee712583078098", [tag: "v0.2.0"]},
+  "elixir_make": {:hex, :elixir_make, "0.6.0", "38349f3e29aff4864352084fc736fa7fa0f2995a819a737554f7ebd28b85aaab", [:mix], [], "hexpm", "d522695b93b7f0b4c0fcb2dfe73a6b905b1c301226a5a55cb42e5b14d509e050"},
+  "jason": {:hex, :jason, "1.2.0", "10043418c42d2493d0ee212d3fddd25d7ffe484380afad769a0a38795938e448", [:mix], [{:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "116747dbe057794c3a3e4e143b7c8390b29f634e16c78a7f59ba75bfa6852e7f"},
+  "stream_data": {:hex, :stream_data, "0.4.3", "62aafd870caff0849a5057a7ec270fad0eb86889f4d433b937d996de99e3db25", [:mix], [], "hexpm", "7dafd5a801f0bc897f74fcd414651632b77ca367a7ae4568778191fc3bf3a19a"},
+}

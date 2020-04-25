@@ -1,0 +1,4092 @@
+{
+  "SOURCE": [
+    {
+      "coefficient_name": "spidf",
+      "command_hex": "f000013600000001f000013700000002f000013800000001f000013900000002",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "adc_2ch",
+      "command_hex": "f000013600000005f000013700000006f000013800000005f000013900000006",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "adc_4ch",
+      "command_hex": "f000013600000005f000013700000006f000013800000003f000013900000004",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_ALL": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "83000000",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "mute",
+      "command_hex": "83000001",
+      "signed": 0,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_FL": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000002",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000029",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000001",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d4000008",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_FR": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000003",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000026",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000003",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d400000a",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_SL": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000004",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000023",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000004",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d400000b",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_SR": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000005",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000020",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000005",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d400000c",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_RL": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000008",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000017",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000006",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d400000d",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_RR": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000009",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f1000014",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000007",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d400000e",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_CEN": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000006",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f100001d",
+      "signed": 0,
+      "fractional_bits": 16
+    },
+    {
+      "coefficient_name": "treb",
+      "command_hex": "d4000002",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "bass",
+      "command_hex": "d4000009",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CH_SUB": [
+    {
+      "coefficient_name": "gain",
+      "command_hex": "f1000007",
+      "signed": 1,
+      "fractional_bits": 27
+    },
+    {
+      "coefficient_name": "phase",
+      "command_hex": "d500000f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "delay",
+      "command_hex": "f100001a",
+      "signed": 0,
+      "fractional_bits": 16
+    }
+  ],
+  "CROSSOVER_FL_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000bd",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000be",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000bf",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000c0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000c1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000c2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000c3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000c4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000c5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000c6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000c7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000c8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000c9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_FR_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000ad",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000ae",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000af",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000b0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000b1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000b2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000b3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000b4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000b5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000b6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000b7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000b8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000b9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SL_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000009d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000009e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000009f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000a0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000a1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000a2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000a3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000a4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000a5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000a6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000a7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000a8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000a9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SR_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000008d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000008e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000008f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000090",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000091",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000092",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000093",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000094",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000095",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000096",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000097",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000098",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000099",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_RR_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000002d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000002e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000002f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000030",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000031",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000032",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000033",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000034",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000035",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000036",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000037",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000038",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000039",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_RL_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000003d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000003e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000003f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000040",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000041",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000042",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000043",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000044",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000045",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000046",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000047",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000048",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000049",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_CEN_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000007d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000007e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000007f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000080",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000081",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000082",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000083",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000084",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000085",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000086",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000087",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000088",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000089",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SUB_HP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000006d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000006e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000006f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000070",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000071",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000072",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000073",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000074",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000075",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000076",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000077",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000078",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000079",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_FL_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000011d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000011e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000011f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000120",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000121",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000122",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000123",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000124",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000125",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000126",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000127",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000128",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000129",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_FR_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000010d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000010e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000010f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000110",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000111",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000112",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000113",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000114",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000115",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000116",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000117",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000118",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000119",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SL_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000fd",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000fe",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000ff",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000100",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000101",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000102",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000103",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000104",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000105",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000106",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000107",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000108",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000109",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SR_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000ed",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000ee",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000ef",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000f0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000f1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000f2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000f3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000f4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000f5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000f6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000f7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000f8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000f9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_RL_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000005d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000005e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000005f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000060",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000061",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000062",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000063",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000064",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000065",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000066",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000067",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000068",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000069",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_RR_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f000004d",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f000004e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f000004f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f0000050",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f0000051",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f0000052",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f0000053",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f0000054",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f0000055",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f0000056",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f0000057",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f0000058",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f0000059",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_CEN_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000dd",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000de",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000df",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000e0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000e1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000e2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000e3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000e4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000e5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000e6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000e7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000e8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000e9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "CROSSOVER_SUB_LP": [
+    {
+      "coefficient_name": "k",
+      "command_hex": "f00000cd",
+      "signed": 1,
+      "fractional_bits": 30
+    },
+    {
+      "coefficient_name": "a_1",
+      "command_hex": "f00000ce",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_1",
+      "command_hex": "f00000cf",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_1",
+      "command_hex": "f00000d0",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_2",
+      "command_hex": "f00000d1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_2",
+      "command_hex": "f00000d2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_2",
+      "command_hex": "f00000d3",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_3",
+      "command_hex": "f00000d4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_3",
+      "command_hex": "f00000d5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_3",
+      "command_hex": "f00000d6",
+      "signed": 1,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "a_4",
+      "command_hex": "f00000d7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b_4",
+      "command_hex": "f00000d8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "c_4",
+      "command_hex": "f00000d9",
+      "signed": 1,
+      "fractional_bits": 0
+    }
+  ],
+  "EQ_FL_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000261",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000280",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000029f",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000262",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000281",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a0",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000263",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000282",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a1",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000264",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000283",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a2",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000265",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000284",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a3",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000266",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000285",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a4",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000267",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000286",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a5",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000268",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000287",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a6",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000269",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000288",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a7",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000289",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a8",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002a9",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND12": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002aa",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND13": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002ab",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND14": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002ac",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND15": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000026f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002ad",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND16": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000270",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000028f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002ae",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND17": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000271",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000290",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002af",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND18": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000272",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000291",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b0",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND19": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000273",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000292",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b1",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND20": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000274",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000293",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b2",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND21": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000275",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000294",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b3",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND22": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000276",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000295",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b4",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND23": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000277",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000296",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b5",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND24": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000278",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000297",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b6",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND25": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000279",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000298",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b7",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND26": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000299",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b8",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND27": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000029a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002b9",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND28": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000029b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002ba",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND29": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000029c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002bb",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND30": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000029d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002bc",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FL_BAND31": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000027f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000029e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00002bd",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002dd",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00002fc",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000031b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002de",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00002fd",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000031c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002df",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00002fe",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000031d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e0",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00002ff",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000031e",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000300",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000031f",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000301",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000320",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e3",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000302",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000321",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000303",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000322",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000304",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000323",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e6",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000305",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000324",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000306",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000325",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND12": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000307",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000326",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND13": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002e9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000308",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000327",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND14": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002ea",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000309",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000328",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND15": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002eb",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000329",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND16": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002ec",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032a",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND17": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002ed",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND18": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002ee",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND19": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002ef",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND20": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f0",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000030f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032e",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND21": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000310",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000032f",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND22": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000311",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000330",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND23": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f3",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000312",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000331",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND24": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000313",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000332",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND25": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000314",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000333",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND26": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f6",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000315",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000334",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND27": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000316",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000335",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND28": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000317",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000336",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND29": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002f9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000318",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000337",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND30": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002fa",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000319",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000338",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_FR_BAND31": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00002fb",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000031a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000339",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000151",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000015c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000167",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000152",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000015d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000168",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000153",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000015e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000169",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000154",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000015f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016a",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000155",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000160",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000156",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000161",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000157",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000162",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000158",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000163",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016e",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000159",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000164",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000016f",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000015a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000165",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000170",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SL_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000015b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000166",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000171",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000017d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000188",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000193",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000017e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000189",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000194",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000017f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000195",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000180",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000196",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000181",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000197",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000182",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000198",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000183",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000199",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000184",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000018f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000019a",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000185",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000190",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000019b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000186",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000191",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000019c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SR_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000187",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000192",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000019d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001a9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001bf",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001aa",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c0",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001ab",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b6",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c1",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001ac",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c2",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001ad",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c3",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001ae",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001b9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c4",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001af",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001ba",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c5",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001b0",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001ba",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c6",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001b1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001bb",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c7",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001b2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001bc",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c8",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CEN_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001b3",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001bd",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001c9",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001d5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e0",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001eb",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001d6",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e1",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001ec",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001d7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e2",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001ed",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001d8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e3",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001ee",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001d9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e4",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001ef",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001da",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e5",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f0",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001db",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e6",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f1",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001dc",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e7",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f2",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001dd",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e8",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f3",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001de",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001e9",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f4",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_SUB_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f00001df",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f00001ea",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f00001f5",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000201",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000020c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000217",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000202",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000020d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000218",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000203",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000020e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000219",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000204",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000020f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021a",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000205",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000210",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000206",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000211",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000207",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000212",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000208",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000213",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021e",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000209",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000214",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000021f",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000020a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000215",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000220",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RL_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000020b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000216",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000221",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND1": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000022d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000238",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000243",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND2": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000022e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000239",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000244",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND3": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f000022f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023a",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000245",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND4": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000230",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023b",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000246",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND5": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000231",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023c",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000247",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND6": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000232",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023d",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000248",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND7": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000233",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023e",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f0000249",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND8": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000234",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f000023f",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000024a",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND9": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000235",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000240",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000024b",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND10": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000236",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000241",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000024c",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_RR_BAND11": [
+    {
+      "coefficient_name": "a",
+      "command_hex": "f0000237",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "b",
+      "command_hex": "f0000242",
+      "signed": 1,
+      "fractional_bits": 31
+    },
+    {
+      "coefficient_name": "g",
+      "command_hex": "f000024d",
+      "signed": 1,
+      "fractional_bits": 29
+    }
+  ],
+  "EQ_CTRL": [
+    {
+      "coefficient_name": "enable",
+      "command_hex": "f000036000000001",
+      "signed": 0,
+      "fractional_bits": 0
+    },
+    {
+      "coefficient_name": "disable",
+      "command_hex": "f000036000000000",
+      "signed": 0,
+      "fractional_bits": 0
+    }
+  ]
+}

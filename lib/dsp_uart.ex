@@ -13,6 +13,10 @@ defmodule DspUart do
   end
 
   @spec append_serial_message_checksum(binary) :: binary
+  @doc """
+  Sum the bytes in a message, and append the least significant byte of the sum
+  Effectively, rolling over the sum after 255.
+  """
   def append_serial_message_checksum(message) do
     checksum = for <<i <- message>>, reduce: 0 do
       acc -> acc + i
@@ -20,14 +24,14 @@ defmodule DspUart do
     message <> <<checksum :: 8>>
   end
 
+
   @spec serialise_mcu_command(binary) :: binary
+  @doc """
+    Takes a binary command value and serialises it in to a form ready to sent over the
+    serial link.
+  """
   def serialise_mcu_command(command_value) do
     message = mcu_command_prefix() <> command_value
-    serialise_message(message)
-  end
-
-  @spec serialise_message(binary) :: binary
-  def serialise_message(message) do
     prefix = mcu_message_prefix() <> :binary.encode_unsigned(byte_size(message))
     prefix <> append_serial_message_checksum(message)
   end

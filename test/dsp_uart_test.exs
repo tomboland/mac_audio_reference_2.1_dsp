@@ -18,8 +18,7 @@ defmodule DspUartTest do
         imin = unsigned_min_for_byte_length(unquote(byte_length))
         imax = unsigned_max_for_byte_length(unquote(byte_length))
 
-        check all command <- StreamData.integer(imin..imax),
-                  value   <- StreamData.integer(imin..imax) do
+        check all command <- StreamData.integer(imin..imax) do
           message_prefix = :binary.decode_unsigned(DspUart.mcu_message_prefix())
           command_prefix = :binary.decode_unsigned(DspUart.mcu_command_prefix())
           <<
@@ -27,19 +26,17 @@ defmodule DspUartTest do
             length :: size(8),
             ^command_prefix,
             mcommand :: binary-size(unquote(byte_length)),
-            mvalue :: binary-size(unquote(byte_length)),
             checksum :: size(8)
-          >> = DspUart.serialise_mcu_command(command, value)
+          >> = DspUart.serialise_mcu_command(:binary.encode_unsigned(command))
 
           assert(:binary.decode_unsigned(mcommand) == command)
-          assert(:binary.decode_unsigned(mvalue) == value)
           assert(<<message_prefix>> == DspUart.mcu_message_prefix())
           assert(<<command_prefix>> == DspUart.mcu_command_prefix())
 
-          expected_length = [command_prefix, command, value]
-          |> Enum.map(fn x -> :binary.encode_unsigned(x) end)
-          |> Enum.map(fn x -> byte_size(x) end)
-          |> Enum.sum()
+          expected_length = [command_prefix, command]
+            |> Enum.map(fn x -> :binary.encode_unsigned(x) end)
+            |> Enum.map(fn x -> byte_size(x) end)
+            |> Enum.sum()
 
           assert(length == expected_length)
         end

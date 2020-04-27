@@ -65,4 +65,12 @@ defmodule DspUartTest do
     end)
   end
 
+  test "Serial connection can be made" do
+    pid = DspUart.get_serial_connection("/dev/ttyUSB0")
+    DspUart.rs232_test(pid)
+    DspUart.dsp_type_test(pid)
+    Dsp.eq(:EQ_FL_BAND9, 1.0, -12.0)
+    |> Enum.map(fn m -> DspUart.send_serial_message(pid, m) end)
+  end
+
 end

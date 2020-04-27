@@ -8,8 +8,8 @@ defmodule DspEq do
 
   ## Examples
 
-      iex> DspEq.dsp_eq_gain(1.0)
-      1.1220184543019633
+      iex> DspEq.dsp_eq_coeffs(1000, 1, -1.0)
+      [a: 0.9013395575820645, b: 0.9914448613738104]
 
   """
 
@@ -19,44 +19,33 @@ defmodule DspEq do
   @type eq_a_coeff :: float
   @type eq_b_coeff :: float
   @type eq_coeffs :: [
-    a_coeff: eq_a_coeff,
-    b_coeff: eq_b_coeff
+    a: eq_a_coeff,
+    b: eq_b_coeff
   ]
 
   @spec sample_rate :: 48000
   def sample_rate, do: 48000
 
-  @spec dsp_eq_gain(eq_gain) :: float
-  def dsp_eq_gain(gain) when gain < -12.0 do
-    dsp_eq_gain(-12.0)
-  end
-
-  def dsp_eq_gain(gain) when gain > 12.0 do
-    dsp_eq_gain(12.0)
-  end
-
-  def dsp_eq_gain(gain) do
-    :math.pow(10.0, gain / 20.0)
-  end
-
-
   @spec dsp_eq_coeffs(eq_freq, eq_q_factor, eq_gain) :: eq_coeffs
-  def dsp_eq_coeffs(freq, q_factor, gain) when q_factor < 0.1 do
-    dsp_eq_coeffs(freq, 0.1, gain)
-  end
-
+  @doc """
+  Generate the a and b coefficients for the digital peaking EQ filter
+  """
   def dsp_eq_coeffs(freq, q_factor, gain) do
-    omega_c = (2.0 * :math.pi) * freq / sample_rate()
-    sin_omega_c = :math.sin(omega_c)
-    cos_omega_c = :math.cos(omega_c)
-    g = dsp_eq_gain(gain)
+    ω0 = 2.0 * :math.pi * freq / sample_rate()
+    sin_ω0 = :math.sin(ω0)
+    cos_ω0 = :math.cos(ω0)
     q = :math.pow(2.0, (1 / q_factor) / 2.0)
-    q_2 = q / (q * q - 1.0)
-    omega_3 = omega_c * (:math.sqrt(4.0 * q_2 * q_2 + 1.0) - 1.0) / (q_2 + q_2)
-    q_3 = :math.sin(omega_3) * sin_omega_c / (2.0 * (:math.cos(omega_3) - cos_omega_c))
-    final_q = if gain < 0.0, do: q_3 * g, else: q_3
-    a = (2.0 * final_q - sin_omega_c) / (2.0 * final_q + sin_omega_c)
-    [a_coeff: a, b_coeff: cos_omega_c]
+    q2 = q / (q * q - 1.0)
+    ω1 = ω0 * (:math.sqrt(4.0 * q2 * q2 + 1.0) - 1.0) / (q2 + q2)
+    q3 = :math.sin(ω1) * sin_ω0 / (2.0 * (:math.cos(ω1) - cos_ω0))
+    final_q = cond do
+      gain < 0.0 -> q3 * :math.pow(10.0, gain / 20.0)
+      true -> q3
+    end
+    [
+      a: (2.0 * final_q - sin_ω0) / (2.0 * final_q + sin_ω0),
+      b: cos_ω0
+    ]
   end
 
 end

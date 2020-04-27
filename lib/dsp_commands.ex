@@ -7,7 +7,7 @@ defmodule DspCommands do
   @type command_name :: atom()
   @type coeff_name :: atom()
   @type command :: binary()
-  @type coeff_value :: pos_integer()
+  @type coeff_value :: float()
   @type signedness :: boolean()
   @type fractional_bits :: pos_integer()
 
@@ -79,4 +79,23 @@ defmodule DspCommands do
     end
   end
 
+  def frequency_from_31_band(band) do
+    s = Atom.to_string(band)
+    IO.inspect(s)
+    [m] = Regex.run(~r/[[:digit:]]+$/, s)
+    band_num = String.to_integer(m)
+    case Regex.match?(~r/^EQ_F/, s) do
+      true -> Enum.at(third_octave_bands(), band_num - 1)
+      false -> Enum.at(octave_bands(), band_num - 1)
+    end
+  end
+
+  def third_octave_bands, do: [
+    20, 25, 31.5, 40, 50, 63, 80, 100, 125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250,
+    1600, 2000, 2500, 3150, 4000, 5000, 6300, 8000, 10000, 12500, 16000, 20000
+  ]
+
+  def octave_bands, do: [
+    32, 64, 125, 250, 500, 800, 1200, 3100, 6000, 10000, 16000
+  ]
 end

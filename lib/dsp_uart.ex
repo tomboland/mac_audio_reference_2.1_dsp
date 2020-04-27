@@ -1,5 +1,5 @@
 defmodule DspUart do
-  def serial_baud_rate, do: 19200
+  def serial_baud_rate, do: 192000
   def serial_timeout, do: 2
   def mcu_command_prefix, do: <<0x04::8>>
   def mcu_init_prefix, do: <<0x03::8>>
@@ -47,9 +47,9 @@ defmodule DspUart do
     prefix <> append_serial_message_checksum(message)
   end
 
-  def get_serial_connection(dev \\ "ttyUSB0") do
+  def get_serial_connection(dev \\ "tnt0") do
     {:ok, pid} = Circuits.UART.start_link()
-    Circuits.UART.open(pid, dev, active: false)
+    :ok = Circuits.UART.open(pid, dev, speed: serial_baud_rate(), active: false)
     pid
   end
 
@@ -63,7 +63,8 @@ defmodule DspUart do
 
   def send_serial_message(pid, message) do
     IO.inspect(message)
-    Circuits.UART.write(pid, message, 1000)
+    Circuits.UART.flush(pid)
+    Circuits.UART.write(pid, message)
     Circuits.UART.read(pid)
   end
 

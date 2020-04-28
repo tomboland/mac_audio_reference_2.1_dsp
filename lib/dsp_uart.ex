@@ -42,11 +42,13 @@ defmodule DspUart do
     serialise_message(message)
   end
 
+  @spec serialise_message(binary) :: binary
   def serialise_message(message) do
     prefix = mcu_message_prefix() <> :binary.encode_unsigned(byte_size(message))
     prefix <> append_serial_message_checksum(message)
   end
 
+  @spec get_serial_connection(String.t) :: pid
   def get_serial_connection(dev \\ "tnt0") do
     {:ok, pid} = Circuits.UART.start_link()
     :ok = Circuits.UART.open(pid, dev, speed: serial_baud_rate(), active: false)
@@ -54,18 +56,34 @@ defmodule DspUart do
   end
 
   def rs232_test(pid) do
-    {:ok, <<0xff::8>>} = send_serial_message(pid, serialise_mcu_init_command(<<07>>))
+    {:ok, <<0xff::8>>} = send_serial_message_recv(pid, serialise_mcu_init_command(<<07>>))
   end
 
   def dsp_type_test(pid) do
-    {:ok, <<0x11::8>>} = send_serial_message(pid, serialise_mcu_init_command(<<08>>))
+    {:ok, <<0x11::8>>} = send_serial_message_recv(pid, serialise_mcu_init_command(<<08>>))
+  end
+
+  def send_serial_message_recv(pid, message) do
+    IO.inspect(message)
+    Circuits.UART.flush(pid)
+    Circuits.UART.write(pid, message)
+    Circuits.UART.read(pid)
   end
 
   def send_serial_message(pid, message) do
     IO.inspect(message)
     Circuits.UART.flush(pid)
     Circuits.UART.write(pid, message)
-    Circuits.UART.read(pid)
+  end
+
+  @spec commit_messages(String.t, [binary]) :: [any]
+  def commit_messages(dev, messages) do
+    pid = get_serial_connection(dev)
+    messages
+    |> List.flatten()
+    |> Enum.chunk_every(8)
+    |> Enum.map(&:erlang.list_to_binary/1)
+    |> Enum.map(&send_serial_message(pid, &1))
   end
 
 end

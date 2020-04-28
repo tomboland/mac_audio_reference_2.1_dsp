@@ -4,7 +4,7 @@ defmodule DspCommands do
   def max_unsigned_int32, do: 4294967296
 
 
-  @type command_name :: atom()
+  @type command_name :: String.t()
   @type coeff_name :: atom()
   @type command :: binary()
   @type coeff_value :: float()
@@ -24,8 +24,7 @@ defmodule DspCommands do
       File.read!(filename)
       |> Jason.decode!()
       |> Map.new(fn {k, v} ->
-        command_name = String.to_atom(k)
-        {command_name, dsp_commands_from_group(v)}
+        {k, dsp_commands_from_group(v)}
       end)
     make_dsp_command(dsp_commands)
   end
@@ -39,7 +38,7 @@ defmodule DspCommands do
         command[:signedness],
         value
       )
-      :binary.encode_unsigned(command[:command_hex]) <> :binary.encode_unsigned(fixed_point_value)
+      command[:command_hex] <> :binary.encode_unsigned(fixed_point_value)
     end
   end
 
@@ -50,7 +49,8 @@ defmodule DspCommands do
 
   def dsp_command_from_raw(command) do
     coeff_name = String.to_atom(command["coefficient_name"])
-    command_hex = :binary.decode_unsigned(command["command_hex"])
+    {command_int, ""} = Integer.parse(command["command_hex"], 16)
+    command_hex = :binary.encode_unsigned(command_int)
     fractional_bits = command["fractional_bits"]
     signedness = if command["signedness"] == 0, do: false, else: true
     {
@@ -79,23 +79,4 @@ defmodule DspCommands do
     end
   end
 
-  def frequency_from_31_band(band) do
-    s = Atom.to_string(band)
-    IO.inspect(s)
-    [m] = Regex.run(~r/[[:digit:]]+$/, s)
-    band_num = String.to_integer(m)
-    case Regex.match?(~r/^EQ_F/, s) do
-      true -> Enum.at(third_octave_bands(), band_num - 1)
-      false -> Enum.at(octave_bands(), band_num - 1)
-    end
-  end
-
-  def third_octave_bands, do: [
-    20, 25, 31.5, 40, 50, 63, 80, 100, 125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250,
-    1600, 2000, 2500, 3150, 4000, 5000, 6300, 8000, 10000, 12500, 16000, 20000
-  ]
-
-  def octave_bands, do: [
-    32, 64, 125, 250, 500, 800, 1200, 3100, 6000, 10000, 16000
-  ]
 end

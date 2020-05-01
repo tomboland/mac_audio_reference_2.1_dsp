@@ -77,9 +77,5 @@ defmodule DspUartTest do
     Circuits.UART.read(pid)
     DspUart.rs232_test(pid)
     DspUart.dsp_type_test(pid)
-
-    message = Dsp.eq(:EQ_FL_BAND10, 1.0, 0.0)
-    |> :erlang.list_to_binary()
-    DspUart.send_serial_message(pid, message)
   end
 end

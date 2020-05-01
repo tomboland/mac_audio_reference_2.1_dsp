@@ -37,12 +37,13 @@ defmodule DspEq do
   @doc """
   Generate the a, b, and g coefficients for the digital peaking EQ filter
   I can't quite marry this up with this: https://www.w3.org/2011/audio/audio-eq-cookbook.html
-  ω0 is frequency in radians per-second
+  ω0 is the normalised angular frequency in radians
   a coefficient is the main work here.  Answers on a postcard
   b coefficient is the cosine of ω0
   g coefficient is fundamentally the gain
   """
   def dsp_eq_coeffs(freq, q_factor, gain_db) do
+    IO.inspect({freq, q_factor, gain_db})
     ω0 = 2.0 * :math.pi * freq / sample_rate()
     gain = gain_coefficient_from_db(gain_db)
     sin_ω0 = :math.sin(ω0)

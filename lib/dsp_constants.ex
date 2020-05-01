@@ -1,7 +1,7 @@
 defmodule DspConstants do
 
-  def eleven_band_channels(), do: [:fl, :fr]
-  def third_octave_band_channels(), do: [:rl, :rr]
+  def eleven_band_channels(), do: [:rl, :rr, :sl, :sr]
+  def third_octave_band_channels(), do: [:fl, :fr]
 
   def eleven_band_peq_enums() do
     %{

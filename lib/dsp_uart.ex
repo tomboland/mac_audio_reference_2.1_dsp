@@ -65,14 +65,14 @@ defmodule DspUart do
 
   def send_serial_message_recv(pid, message) do
     IO.inspect(message)
-    Circuits.UART.flush(pid)
+    #Circuits.UART.flush(pid)
     Circuits.UART.write(pid, message)
-    Circuits.UART.read(pid)
+    Circuits.UART.read(pid, 100)
   end
 
   def send_serial_message(pid, message) do
     IO.inspect(message)
-    Circuits.UART.flush(pid)
+    #Circuits.UART.flush(pid)
     Circuits.UART.write(pid, message)
   end
 

@@ -1,9 +1,9 @@
-defmodule MacAudioDsp.MixProject do
+defmodule Dsp.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :mac_audio_dsp,
+      app: :dsp,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
